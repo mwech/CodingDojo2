@@ -33,11 +33,11 @@
                         <StackPanel>
                             <StackPanel Orientation="Horizontal">
                                 <Image Margin="10,10,5,10" Height="48" Source="img/Cloud sun02-WF.png"/>
-                                <Label Content="20 °" VerticalAlignment="Center" FontSize="18" Foreground="White"/>
+                                <Label Content="20 °" VerticalAlignment="Center" FontSize="18" Foreground="#FFE0E0E0"/>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal">
                                 <Image Margin="10,10,5,10" Height="48" Source="img/Wind.png"/>
-                                <Label Content="12 km/h" VerticalAlignment="Center" FontSize="18" Foreground="White"/>
+                                <Label Content="12 km/h" VerticalAlignment="Center" FontSize="18" Foreground="#FFE0E0E0"/>
                             </StackPanel>
                         </StackPanel>
                     </Border>
@@ -45,20 +45,57 @@
                         <StackPanel>
                             <StackPanel Orientation="Horizontal">
                                 <Image Margin="10,10,5,10" Height="48" Source="img/Solar.png"/>
-                                <Label Content="3.545 W" VerticalAlignment="Center" FontSize="18" Foreground="White"/>
+                                <Label Content="3.545 W" VerticalAlignment="Center" FontSize="18" Foreground="#FFE0E0E0"/>
                             </StackPanel>
 
                             <StackPanel Orientation="Horizontal">
                                 <Image Margin="10,10,5,10" Height="48" Source="img/Man-01.png"/>
-                                <Label Content="0" VerticalAlignment="Center"  FontSize="18" Foreground="White"/>
+                                <Label Content="0" VerticalAlignment="Center"  FontSize="18" Foreground="#FFE0E0E0"/>
                             </StackPanel>
 
                             <StackPanel Orientation="Horizontal">
                                 <Image Margin="10,10,5,10" Height="48" Source="img/Lock-WF.png"/>
-                                <Label Content="OK" VerticalAlignment="Center"  FontSize="18" Foreground="White"/>
+                                <Label Content="OK" VerticalAlignment="Center"  FontSize="18" Foreground="#FFE0E0E0"/>
                             </StackPanel>
                         </StackPanel>
                     </Border>
+                    <Border BorderThickness="0,0,0,1" BorderBrush="LightGray">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="10,10,5,10" Height="48" Source="img/Message Mail-WF.png"/>
+                                <Label Content="7" VerticalAlignment="Center"  FontSize="18" Foreground="#FFE0E0E0"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="10,10,5,10" Height="48" Source="img/Tasks.png"/>
+                                <Label Content="4" VerticalAlignment="Center"  FontSize="18" Foreground="#FFE0E0E0"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+                    <Border BorderThickness="0,0,0,1" BorderBrush="LightGray">
+                        <StackPanel>
+                            <Button Content="Übersicht" Margin="20,5,20,5" Foreground="#FFE0E0E0" Background="Black"/>
+                            <Button Content="Räume" Margin="20,5,20,5" Foreground="#FFE0E0E0" Background="Black"/>
+                            <Button Content="Geräte" Margin="20,5,20,5" Foreground="#FFE0E0E0" Background="Black"/>
+                            <Button Content="Gebäude" Margin="20,5,20,5" Foreground="#FFE0E0E0" Background="Black"/>
+                            <Button Content="Sicherheit" Margin="20,5,20,5" Foreground="#FFE0E0E0" Background="Black"/>
+                            <Button Content="Multimedia" Margin="20,5,20,5" Foreground="#FFE0E0E0" Background="Black"/>
+                        </StackPanel>
+                    </Border>
+                    <Border BorderThickness="0,0,0,1" BorderBrush="LightGray">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="10,10,5,10" Height="48" Source="img/Bell New-WF.png"/>
+                                <Image Margin="5,10,5,10" Height="48" Source="img/Speaker Decrease - 01.png"/>
+                                <Label Content="4" VerticalAlignment="Center"  FontSize="18" Foreground="#FFE0E0E0"/>
+                                <Image Margin="5,10,5,10" Height="48" Source="img/Speaker Increase - 02.png"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="12:34" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Foreground="#FFE0E0E0"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+                    
                 </StackPanel>
             </Grid>
         </Border>
