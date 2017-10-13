@@ -5,21 +5,62 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CodingDojo2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="900" Width="1280">
     <Grid Background="Black">
         <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="200"/>
         </Grid.ColumnDefinitions>
-        <Border  BorderBrush="Red" BorderThickness="1">
+        <Border BorderBrush="Red" BorderThickness="1" Margin="10,5,10,5">
             <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
                 <Image Source="img/Warning-WF.png"></Image>
-                <Label Content="Überlauf Grauwasser" VerticalAlignment="Center" Foreground="#FFE0E0E0" />
+                <Label Content="Überlauf Grauwasser" VerticalAlignment="Center" FontSize="20" Foreground="#FFE0E0E0" />
             </StackPanel>
+        </Border>
+        <Label Content="...tbd..." Grid.Row="1" Foreground="#FFE0E0E0" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
+        <Border Grid.Column="1" Grid.RowSpan="2" BorderBrush="White" BorderThickness="1,0,0,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Vertical">
+                    <Border BorderThickness="0,0,0,1" BorderBrush="LightGray">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="10,10,5,10" Height="48" Source="img/Cloud sun02-WF.png"/>
+                                <Label Content="20 °" VerticalAlignment="Center" FontSize="18" Foreground="White"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="10,10,5,10" Height="48" Source="img/Wind.png"/>
+                                <Label Content="12 km/h" VerticalAlignment="Center" FontSize="18" Foreground="White"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+                    <Border BorderThickness="0,0,0,1" BorderBrush="LightGray">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="10,10,5,10" Height="48" Source="img/Solar.png"/>
+                                <Label Content="3.545 W" VerticalAlignment="Center" FontSize="18" Foreground="White"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="10,10,5,10" Height="48" Source="img/Man-01.png"/>
+                                <Label Content="0" VerticalAlignment="Center"  FontSize="18" Foreground="White"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="10,10,5,10" Height="48" Source="img/Lock-WF.png"/>
+                                <Label Content="OK" VerticalAlignment="Center"  FontSize="18" Foreground="White"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </Grid>
         </Border>
     </Grid>
 </Window>
